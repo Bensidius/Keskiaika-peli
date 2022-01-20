@@ -13,6 +13,8 @@ public class Player : MonoBehaviour {
     public float jumpForce = 10f;
     public bool isDead;
 
+     
+
      // boolean components
     public bool levelFinished;
     public bool canControl;

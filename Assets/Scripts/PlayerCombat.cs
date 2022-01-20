@@ -11,8 +11,15 @@ public class PlayerCombat : MonoBehaviour
     public LayerMask enemyLayers;
     public float attackRange = 0.5f;
 
-   
+    //public int attackDamage = 40;
 
+    public CircleCollider2D col;
+
+   
+    void Start()
+    {
+        col = GetComponent<CircleCollider2D>();
+    }
 
 
     // Update is called once per frame
@@ -28,12 +35,18 @@ public class PlayerCombat : MonoBehaviour
     {
         // Play an attack animation
         animator.SetTrigger("Attack");
+        
+        col.radius = 0.40f;
+
+        //col.enabled = false;
+        
+
         // detect enemies in range of attack
-        Collider2D[] hitEnemies = Physics2D.OverlapCircleAll(attackPoint.position, attackRange, enemyLayers);
+        //Collider2D[] hitEnemies = Physics2D.OverlapCircleAll(attackPoint.position, attackRange, enemyLayers);
         // damage them
-        foreach(Collider2D enemy in hitEnemies)
+        //foreach(Collider2D enemy in hitEnemies)
         {
-            enemy.GetComponent<Enemy>().TakeDamage(40); 
+            //enemy.GetComponent<Enemy>().TakeDamage(attackDamage); 
             //Debug.Log("Isketään" + enemy.name);
         }
     }

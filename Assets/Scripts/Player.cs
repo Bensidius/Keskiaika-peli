@@ -4,7 +4,8 @@ using UnityEngine;
 
 public class Player : MonoBehaviour {
 
-
+    public CircleCollider2D col;
+    public Animator animator;
 
     // public components
     public int lives = 3;
@@ -12,6 +13,8 @@ public class Player : MonoBehaviour {
     public float speed = 3f;
     public float jumpForce = 10f;
     public bool isDead;
+
+   public bool attack = false;
 
      
 
@@ -43,6 +46,13 @@ public class Player : MonoBehaviour {
     // Start is called before the first frame update
     void Start()
     {
+
+        col = GetComponent<CircleCollider2D>();
+
+
+
+
+
         rb = GetComponent<Rigidbody2D>(); // Search for the rigidbody component
         sRend = GetComponent<SpriteRenderer>();
         anim = GetComponent<Animator>();
@@ -58,6 +68,21 @@ public class Player : MonoBehaviour {
     }
     void Update()
     {
+
+      if(Input.GetKeyDown(KeyCode.C))
+       {
+          Attack();
+       }  
+
+
+
+
+
+
+
+
+
+
         // cast a line to check if player is on the ground 
         hitGround = Physics2D.Linecast(transform.position, groundCheck.position, groundMask); // Check for all hits on ground collider
         Debug.DrawLine(transform.position, groundCheck.position, Color.red); // Visualize the line created above in the Scene view
@@ -169,9 +194,34 @@ public class Player : MonoBehaviour {
     }
 
 
-    void OnTriggerEnter2D(Collider2D other)
+ 
+    void OnTriggerEnter2D(Collider2D collision)
     {
-        if (other.gameObject.tag == "Enemy")  // If player hits the spikes
+        print("törmäys");
+        if(attack)
+        {
+         // tuhotaan enemy
+         print("attack on tosi");
+        if (collision.gameObject.tag == "Enemy")  // If player hits the spikes
+        {
+            //canControl = false;
+            //anim.SetBool("Death", true);
+            //isDead = true;   
+
+            print("enemy on nähty");
+
+            Destroy(collision.gameObject); 
+
+                       
+        }
+
+       
+
+        }
+        
+        
+        
+        //if (other.gameObject.tag == "Enemy")  // If player hits the spikes
         {
             canControl = false;
             anim.SetBool("Death", true);
@@ -180,7 +230,7 @@ public class Player : MonoBehaviour {
            
             
         }
-        if (other.gameObject.tag == "Finish") // If player hits the goal
+        //if (other.gameObject.tag == "Finish") // If player hits the goal
         { 
             canControl = false;
             anim.SetBool("Moving", false);
@@ -197,4 +247,21 @@ public class Player : MonoBehaviour {
             onGround = true;
         }
     }
+
+
+void Attack()
+    {
+
+        attack = true;
+
+        // Play an attack animation
+        animator.SetTrigger("Attack");
+        
+        col.radius = 0.6f;           
+
+        col.radius = 0.1f;       
+
+       //attack = false;
+    }
+
 }

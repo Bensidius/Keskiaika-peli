@@ -18090,7 +18090,6 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 512
   attackRange: 0.59
-  col: {fileID: 0}
 --- !u!95 &1794596818 stripped
 Animator:
   m_CorrespondingSourceObject: {fileID: 5594554806507162412, guid: 7bfb3e996eb29de49a44368c20131766, type: 3}
@@ -18116,7 +18115,7 @@ CircleCollider2D:
   m_UsedByComposite: 0
   m_Offset: {x: 0.32, y: 0.13}
   serializedVersion: 2
-  m_Radius: 0.28
+  m_Radius: 0.1
 --- !u!1 &1810243793
 GameObject:
   m_ObjectHideFlags: 0
@@ -21425,6 +21424,18 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1899048102474192664, guid: 87c0a59e096139d418e160aae513ed72, type: 3}
+      propertyPath: m_Size.x
+      value: 0.3221485
+      objectReference: {fileID: 0}
+    - target: {fileID: 1899048102474192664, guid: 87c0a59e096139d418e160aae513ed72, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1899048102474192664, guid: 87c0a59e096139d418e160aae513ed72, type: 3}
+      propertyPath: m_Offset.x
+      value: 0.010038979
+      objectReference: {fileID: 0}
     - target: {fileID: 1899048102474192666, guid: 87c0a59e096139d418e160aae513ed72, type: 3}
       propertyPath: speed
       value: 0
@@ -21436,6 +21447,18 @@ PrefabInstance:
     - target: {fileID: 1899048102474192669, guid: 87c0a59e096139d418e160aae513ed72, type: 3}
       propertyPath: m_Name
       value: Skeleton
+      objectReference: {fileID: 0}
+    - target: {fileID: 1899048102474192669, guid: 87c0a59e096139d418e160aae513ed72, type: 3}
+      propertyPath: m_TagString
+      value: Enemy
+      objectReference: {fileID: 0}
+    - target: {fileID: 1899048104315816302, guid: 87c0a59e096139d418e160aae513ed72, type: 3}
+      propertyPath: m_Size.x
+      value: 0.32232055
+      objectReference: {fileID: 0}
+    - target: {fileID: 1899048104315816302, guid: 87c0a59e096139d418e160aae513ed72, type: 3}
+      propertyPath: m_Offset.x
+      value: 0.012746528
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 87c0a59e096139d418e160aae513ed72, type: 3}
@@ -21506,6 +21529,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: EnemyTrigger
       objectReference: {fileID: 0}
+    - target: {fileID: 8459888561845623578, guid: 98f633aab0546b843aca10f620232376, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 98f633aab0546b843aca10f620232376, type: 3}
 --- !u!1001 &5594554807332719852
@@ -21563,6 +21590,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Player
       objectReference: {fileID: 0}
+    - target: {fileID: 5594554806507162455, guid: 7bfb3e996eb29de49a44368c20131766, type: 3}
+      propertyPath: attack
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5594554806507162455, guid: 7bfb3e996eb29de49a44368c20131766, type: 3}
+      propertyPath: animator
+      value: 
+      objectReference: {fileID: 1794596818}
     - target: {fileID: 5594554806507162455, guid: 7bfb3e996eb29de49a44368c20131766, type: 3}
       propertyPath: m_Enabled
       value: 1

@@ -125,6 +125,11 @@ public class Player : MonoBehaviour {
             sRend.flipX = false;
             anim.SetBool("Moving", true);
         }
+
+
+       
+
+
         // If landed & not moving
         else if (!Input.GetKey(KeyCode.A) && !Input.GetKey(KeyCode.D) && onGround)
         {
@@ -169,12 +174,16 @@ public class Player : MonoBehaviour {
             canControl = false;
             anim.SetBool("Death", true);
             isDead = true;
+
+           
+            
         }
         if (other.gameObject.tag == "Finish") // If player hits the goal
         { 
             canControl = false;
             anim.SetBool("Moving", false);
             levelFinished = true;
+            
         }
     }
 

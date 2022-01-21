@@ -195,22 +195,22 @@ public class Player : MonoBehaviour {
 
 
  
-    void OnTriggerEnter2D(Collider2D collision)
+    void OnTriggerEnter2D(Collider2D other)
     {
-        print("törmäys");
+        //print("törmäys");
         if(attack)
         {
-         // tuhotaan enemy
+          //tuhotaan enemy
          print("attack on tosi");
-        if (collision.gameObject.tag == "Enemy")  // If player hits the spikes
+        //if (collision.gameObject.tag == "Enemy")  // If player hits the spikes
         {
-            //canControl = false;
-            //anim.SetBool("Death", true);
-            //isDead = true;   
+            canControl = false;
+            anim.SetBool("Death", true);
+            isDead = true;   
 
             print("enemy on nähty");
 
-            Destroy(collision.gameObject); 
+            //Destroy(collision.gameObject); 
 
                        
         }
@@ -221,7 +221,7 @@ public class Player : MonoBehaviour {
         
         
         
-        //if (other.gameObject.tag == "Enemy")  // If player hits the spikes
+        if (other.gameObject.tag == "Enemy")  // If player hits the spikes
         {
             canControl = false;
             anim.SetBool("Death", true);
@@ -230,7 +230,7 @@ public class Player : MonoBehaviour {
            
             
         }
-        //if (other.gameObject.tag == "Finish") // If player hits the goal
+        if (other.gameObject.tag == "Finish") // If player hits the goal
         { 
             canControl = false;
             anim.SetBool("Moving", false);
@@ -254,14 +254,14 @@ void Attack()
 
         attack = true;
 
-        // Play an attack animation
+         //Play an attack animation
         animator.SetTrigger("Attack");
         
         col.radius = 0.6f;           
 
         col.radius = 0.1f;       
 
-       //attack = false;
+       attack = false;
     }
 
 }

@@ -1442,6 +1442,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: EnemyTrigger (4)
       objectReference: {fileID: 0}
+    - target: {fileID: 8459888561845623578, guid: 98f633aab0546b843aca10f620232376, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 98f633aab0546b843aca10f620232376, type: 3}
 --- !u!4 &145883541 stripped
@@ -3241,6 +3245,10 @@ PrefabInstance:
     - target: {fileID: 8459888561845623578, guid: 98f633aab0546b843aca10f620232376, type: 3}
       propertyPath: m_Name
       value: EnemyTrigger
+      objectReference: {fileID: 0}
+    - target: {fileID: 8459888561845623578, guid: 98f633aab0546b843aca10f620232376, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 98f633aab0546b843aca10f620232376, type: 3}
@@ -9594,6 +9602,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: EnemyTrigger (3)
       objectReference: {fileID: 0}
+    - target: {fileID: 8459888561845623578, guid: 98f633aab0546b843aca10f620232376, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 98f633aab0546b843aca10f620232376, type: 3}
 --- !u!4 &875168814 stripped
@@ -10550,6 +10562,10 @@ PrefabInstance:
     - target: {fileID: 8459888561845623578, guid: 98f633aab0546b843aca10f620232376, type: 3}
       propertyPath: m_Name
       value: EnemyTrigger (6)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8459888561845623578, guid: 98f633aab0546b843aca10f620232376, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 98f633aab0546b843aca10f620232376, type: 3}
@@ -15618,6 +15634,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Skeleton (3)
       objectReference: {fileID: 0}
+    - target: {fileID: 1899048102474192669, guid: 87c0a59e096139d418e160aae513ed72, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 87c0a59e096139d418e160aae513ed72, type: 3}
 --- !u!4 &1471862311 stripped
@@ -17695,6 +17715,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: EnemyTrigger (5)
       objectReference: {fileID: 0}
+    - target: {fileID: 8459888561845623578, guid: 98f633aab0546b843aca10f620232376, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 98f633aab0546b843aca10f620232376, type: 3}
 --- !u!4 &1645290574 stripped
@@ -18085,6 +18109,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: EnemyTrigger (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 8459888561845623578, guid: 98f633aab0546b843aca10f620232376, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 98f633aab0546b843aca10f620232376, type: 3}
 --- !u!1 &1678560681
@@ -18305,6 +18333,10 @@ PrefabInstance:
     - target: {fileID: 8459888561845623578, guid: 98f633aab0546b843aca10f620232376, type: 3}
       propertyPath: m_Name
       value: EnemyTrigger (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8459888561845623578, guid: 98f633aab0546b843aca10f620232376, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 98f633aab0546b843aca10f620232376, type: 3}
@@ -19347,6 +19379,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Skeleton (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 1899048102474192669, guid: 87c0a59e096139d418e160aae513ed72, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 87c0a59e096139d418e160aae513ed72, type: 3}
 --- !u!4 &1829341551 stripped
@@ -19801,6 +19837,10 @@ PrefabInstance:
     - target: {fileID: 1899048102474192669, guid: 87c0a59e096139d418e160aae513ed72, type: 3}
       propertyPath: m_Name
       value: Skeleton
+      objectReference: {fileID: 0}
+    - target: {fileID: 1899048102474192669, guid: 87c0a59e096139d418e160aae513ed72, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1899048104315816304, guid: 87c0a59e096139d418e160aae513ed72, type: 3}
       propertyPath: m_TagString
@@ -20863,6 +20903,10 @@ PrefabInstance:
     - target: {fileID: 1899048102474192669, guid: 87c0a59e096139d418e160aae513ed72, type: 3}
       propertyPath: m_Name
       value: Skeleton (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1899048102474192669, guid: 87c0a59e096139d418e160aae513ed72, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1899048104315816304, guid: 87c0a59e096139d418e160aae513ed72, type: 3}
       propertyPath: m_TagString
@@ -22631,6 +22675,10 @@ PrefabInstance:
     - target: {fileID: 8459888561845623578, guid: 98f633aab0546b843aca10f620232376, type: 3}
       propertyPath: m_Name
       value: EnemyTrigger
+      objectReference: {fileID: 0}
+    - target: {fileID: 8459888561845623578, guid: 98f633aab0546b843aca10f620232376, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 98f633aab0546b843aca10f620232376, type: 3}

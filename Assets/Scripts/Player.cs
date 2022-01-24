@@ -75,7 +75,24 @@ public class Player : MonoBehaviour {
        }  
 
 
-
+// Jump
+        if (Input.GetKeyDown(KeyCode.Space) && hitGround)
+         {
+                rb.velocity = new Vector2(rb.velocity.x, jumpForce);
+                anim.SetBool("Jumping", true);
+                onGround = false;
+                onSlope = false;
+         }
+        // Checking if falling
+        if(rb.velocity.y < 0f && !hitGround)
+            {
+                anim.SetBool("Jumping", false);
+                anim.SetBool("Falling", true);
+            }
+            else
+            {
+                anim.SetBool("Falling", false);
+            }
 
 
 
@@ -163,24 +180,7 @@ public class Player : MonoBehaviour {
             rb.velocity = Vector2.zero;
             anim.SetBool("Moving", false);
         }
-        // Jump
-        if (Input.GetKeyDown(KeyCode.Space) && hitGround)
-         {
-                rb.velocity = new Vector2(rb.velocity.x, jumpForce);
-                anim.SetBool("Jumping", true);
-                onGround = false;
-                onSlope = false;
-         }
-        // Checking if falling
-        if(rb.velocity.y < 0f && !hitGround)
-            {
-                anim.SetBool("Jumping", false);
-                anim.SetBool("Falling", true);
-            }
-            else
-            {
-                anim.SetBool("Falling", false);
-            }
+        
       }
 
         if(onGround && levelFinished)
